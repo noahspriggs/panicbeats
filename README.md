@@ -22,6 +22,7 @@ Feb 9th
 
 Feb 23rd	
 -	Compile a list of the audio manipulation tools used in Audacity.  
+	https://github.com/noahspriggs/panicbeats/toollist.md
 -	For each tool, determine the relevant algorithm used.  
 
 Mar 9th	
