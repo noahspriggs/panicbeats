@@ -1,3 +1,6 @@
+Change Pitch
+------------
+
 The change pitch feature of Audacity enables the pitch of an audio file to be changed by allowing the user to 
 either enter a semitone change, a percent change in frequency, or a desired key. The effect starts by deducing the
 from frequency:  
@@ -22,6 +25,9 @@ However these issues only have an effect on audio data in rare cases.
 
 Once the from frequency is deduced, the MIDI note is calculated according to the A440 pitch standard, and the user is 
 prompted to enter their desired pitch shift and this value is input into the SoundTouch library in semitone changes.
+
+The SoundTouch library then uses a combination of time-stretching and sample rate transposing to shift the pitch
+the desired amount, see details about the algorithms sound touch uses in the SoundTouch file [[[to be done!]]]
 
 
 
