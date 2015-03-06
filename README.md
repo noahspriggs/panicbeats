@@ -24,10 +24,12 @@ Feb 23rd
 -	Compile a list of the audio manipulation tools used in Audacity.  
 	https://github.com/noahspriggs/panicbeats/blob/master/toollist.md
 -	For each tool, determine the relevant algorithm used.  
+  -	[Undo-redo](https://github.com/noahspriggs/panicbeats/blob/master/undoredo.md)
 
 Mar 9th	
 - Find a list of supported recording devices by type or API compatibility.
 -	Analyze the tool algorithms for benefits and disadvantages in possible alternatives.  
+  -	[Undo-redo](https://github.com/noahspriggs/panicbeats/blob/master/undoredo.md)
 
 Mar 23rd
 - Determine the benefits and drawbacks of the various device types.
