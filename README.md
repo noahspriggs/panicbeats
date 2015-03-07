@@ -25,11 +25,15 @@ Feb 23rd
 	https://github.com/noahspriggs/panicbeats/blob/master/toollist.md
 -	For each tool, determine the relevant algorithm used.  
   -	[Undo-redo](https://github.com/noahspriggs/panicbeats/blob/master/undoredo.md)
+  -	[Change Pitch](https://github.com/noahspriggs/panicbeats/blob/master/changepitch.md)
+  -	[Reverb](https://github.com/noahspriggs/panicbeats/blob/master/reverb.md)
 
 Mar 9th	
 - Find a list of supported recording devices by type or API compatibility.
 -	Analyze the tool algorithms for benefits and disadvantages in possible alternatives.  
   -	[Undo-redo](https://github.com/noahspriggs/panicbeats/blob/master/undoredo.md)
+  -	[Change Pitch](https://github.com/noahspriggs/panicbeats/blob/master/changepitch.md)
+  -	[Reverb](https://github.com/noahspriggs/panicbeats/blob/master/reverb.md)
 
 Mar 23rd
 - Determine the benefits and drawbacks of the various device types.
