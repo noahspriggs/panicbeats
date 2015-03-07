@@ -1,6 +1,6 @@
 Reverb
 
-Audacity produces the reverberation effect using a digital convolution. The user may specify the characteristics of the room in which the reverberation is simulated, or they can select for a set of pre-designed rooms. These parameters are then used to generate the impulse response function of the room, which represents the waveform received by the listener in the room when a mathematically ideal impulse is played [1]. The audio signal is convoluted with this waveform. Audacity does this discrete convolution manually on the CPU.  This is a destructive operation, the original audio is lost except for its presence on the undo stack.
+Audacity produces the reverberation effect using a digital convolution. The user may specify the characteristics of the room in which the reverberation is simulated, or they can select for a set of pre-designed rooms. These parameters are then used to generate the impulse response function of the room, which represents the waveform received by the listener in the room when a mathematically ideal impulse is played [1]. The audio signal is convoluted with this waveform after a high and low pass filter are applied. Audacity does this discrete convolution manually on the CPU.  This is a destructive operation, the original audio is lost except for its presence on the undo stack.
 
 Considerations:
 	1) Simulating the Impulse Response function is inferior to using a sampled response from an actual room.
