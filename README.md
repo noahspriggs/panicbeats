@@ -47,7 +47,7 @@ Mar 23rd
 -	Time/infrastructure permitting: create and integrate a new tool into Audacity.  
   -	[Structure](https://github.com/noahspriggs/panicbeats/blob/master/pluginstructure.md)
   -	[Image Processing](https://github.com/noahspriggs/panicbeats/blob/master/imageprocessing.md)
-  -	[Signal Smoothing](https://github.com/noahspriggs/panicbeats/blob/master/Signal Smoothing.md)
+  -	[Signal Smoothing](https://github.com/noahspriggs/panicbeats/blob/master/signalsmoothing.md)
 
 URL
 ---
