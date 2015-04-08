@@ -7,7 +7,7 @@ Murray Dunne, V00773350
 Project Statement
 -----------------
 Audacity, an audio manipulation tool, was initially developed by Dominic Mazzoni and Roger Dannenberg in 1999. It became open source in 2000. Hosted on SourceForge, Audacity is maintained by a passionate group of open source contributors. However there are still many features desired by the user base.
-	We propose an analysis of the audio capturing and modifying techniques that are included in the recording software Audacity. We will investigate tools and algorithms Audacity uses for recording and editing waveform audio.  
+	We proposed an analysis of the audio capturing and modifying techniques that are included in the recording software Audacity. We investigated tools and algorithms Audacity uses for recording and editing waveform audio.  
 	
 Approach & Deliverables
 -----------------------
