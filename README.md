@@ -1,4 +1,4 @@
-Proposal – Project Panic Beats
+Project Panic Beats
 ==============================
 Noah Spriggs, V00772732  
 Murray Dunne, V00773350
@@ -33,7 +33,6 @@ Feb 23rd
 
 
 Mar 9th	
-- Find a list of supported recording devices by type or API compatibility.
 -	Analyze the tool algorithms for benefits and disadvantages in possible alternatives.  
   -	[Undo-redo](https://github.com/noahspriggs/panicbeats/blob/master/undoredo.md)
   -	[Change Pitch](https://github.com/noahspriggs/panicbeats/blob/master/changepitch.md)
@@ -43,7 +42,6 @@ Mar 9th
   -	[Volume Adjustment](https://github.com/noahspriggs/panicbeats/blob/master/volumeadjustmenteffects.md)
 
 Mar 23rd
-- Determine the benefits and drawbacks of the various device types.
 -	Time/infrastructure permitting: create and integrate a new tool into Audacity.  
   -	[Structure](https://github.com/noahspriggs/panicbeats/blob/master/pluginstructure.md)
   -	[Image Processing](https://github.com/noahspriggs/panicbeats/blob/master/imageprocessing.md)
