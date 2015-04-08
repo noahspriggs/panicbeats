@@ -1,34 +1,14 @@
-Change Pitch
-------------
+Change Tempo/Pitch
+------------------
 
-The change pitch feature of Audacity enables the pitch of an audio file to be changed by allowing the user to 
-either enter a semitone change, a percent change in frequency, or a desired key. The effect starts by deducing the
-from frequency:  
-The general idea of the DeduceFrequencies() method is as follows:  
-1.Generate a window size based on the sample rate
-2.Calculate the number of windows requred to fill about 0.2 seconds
-3.Sum the results of a fast fourier transform performed on each window
-4.Use the peak value of the fast fourier transform along with the windowsize and the sample rate to calculate the freqency 
-  
-The FFT function used is based on an implementation by Don Cross available here: http://www.intersrv.com/~dcross/fft.html
-and has been improved with caching techniques and elimination of type conversions.
-This method is also not guarenteed to produce the correct frequency, some lacking parts of the implementation include:  
-1.No low-passing is done  [2]
-  This can cause noise or higher frequencies to mask the dominant frequency, or more likely to be masked by harmonics that
-  appear more powerful than the fundemental frequencies.
-2.No special window function is used  [2]
-  Typically either a Hamming or Hann window function is used when creating windows, the problem with taking windows
-  as just a function of the sampling rate is that it is possible for artifacts to be created at the edges of the windows
-  due to lack of consideration at where the start and end points are located, these artifacts can also mask the dominant
-  frequency
-However these issues only have an effect on audio data in rare cases.
+The tempo and pitch changing features of audacity are able to modify the desired property without effecting the other. This is done by passing in a semitone or beat-per-minute change into the SoundTouch library, which completes the effect and returns the result. Tempo change is done by using time stretching to increase or decrease the length of the track, pitch change is done by first lengthening or shortening the track without time stretching, then using time stretching to return back to it’s original length. Because pitch shift uses a superset of the tempo shift algorithms, we’ve chosen to focus on it. 
 
-Once the from frequency is deduced, the MIDI note is calculated according to the A440 pitch standard, and the user is 
-prompted to enter their desired pitch shift and this value is input into the SoundTouch library in semitone changes.
+The effect starts by deducing the source frequency using the following method:  
+- Generate a window size based on the sample rate 
+- Calculate the number of windows required to fill about 0.2 seconds 
+- Sum the results of a fast fourier transform performed on each window
+- Use the peak value of the fast fourier transform along with the window size and the sample rate to calculate the frequency
 
-The SoundTouch library then uses a combination of time-stretching and sample rate transposing to shift the pitch
-the desired amount, see details about the algorithms sound touch uses in the SoundTouch file [[[to be done!]]]
+This method is also not guaranteed to produce the correct frequency. First, no low-passing is done [5]. This can cause noise or higher frequencies to mask the dominant frequency, or more likely to be masked by harmonics that appear more powerful than the fundamental frequencies. Second, no special window function is used [5]. Typically either a Hamming or Hann window function is used when creating windows. The problem with taking windows as just a function of the sampling rate is that it is possible for artifacts to be created at the edges of the windows due to lack of consideration at where the start and end points are located. These artifacts can also mask the dominant frequency. However these issues only have an effect on audio data in rare cases.
 
-
-
-[2]http://blog.bjornroche.com/2012/07/frequency-detection-using-fft-aka-pitch.html
+Once the source frequency is deduced, the MIDI note is calculated according to the A440 pitch standard. The user is prompted to enter their desired pitch shift and this value is passed to the SoundTouch library as an interval of semitones. SoundTouch uses a combination of time-stretching and sample rate transposing to shift the pitch the desired amount. One of the key elements in it’s functionality is Synchronous Overlap Add (SOLA). SOLA works by either duplicating or cutting out bits of small sequences within the track, and overlapping these to avoid artefacts. For example, if you want a 10% increase in length and you’re using sequences of 50ms, you would take 50ms samples (plus overlap length) every 45ms and put them end to end. Unfortunately this naive approach often leads to artefacts. For satisfactory quality, the algorithm must select sequences such that the overlapping segments are as similar as possible. This is done by selecting the next optimal sequence from a window of possible start points for each window in order. Fortunately, the similarity of two segments can be easily calculated using a cross-correlation function between the end of the current segment and the window of selection. Alternative methods for finding appropriate overlapping points are beat matching and frequency similarity, instead of waveform similarity [6].
