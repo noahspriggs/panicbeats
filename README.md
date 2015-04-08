@@ -27,6 +27,10 @@ Feb 23rd
   -	[Undo-redo](https://github.com/noahspriggs/panicbeats/blob/master/undoredo.md)
   -	[Change Pitch](https://github.com/noahspriggs/panicbeats/blob/master/changepitch.md)
   -	[Reverb](https://github.com/noahspriggs/panicbeats/blob/master/reverb.md)
+  -	[Voice Removal](https://github.com/noahspriggs/panicbeats/blob/master/voiceremoval.md)
+  -	[Noise Removal](https://github.com/noahspriggs/panicbeats/blob/master/noiseremoval.md)
+  -	[Volume Adjustment](https://github.com/noahspriggs/panicbeats/blob/master/volumeadjustmenteffects.md)
+
 
 Mar 9th	
 - Find a list of supported recording devices by type or API compatibility.
@@ -34,10 +38,16 @@ Mar 9th
   -	[Undo-redo](https://github.com/noahspriggs/panicbeats/blob/master/undoredo.md)
   -	[Change Pitch](https://github.com/noahspriggs/panicbeats/blob/master/changepitch.md)
   -	[Reverb](https://github.com/noahspriggs/panicbeats/blob/master/reverb.md)
+  -	[Voice Removal](https://github.com/noahspriggs/panicbeats/blob/master/voiceremoval.md)
+  -	[Noise Removal](https://github.com/noahspriggs/panicbeats/blob/master/noiseremoval.md)
+  -	[Volume Adjustment](https://github.com/noahspriggs/panicbeats/blob/master/volumeadjustmenteffects.md)
 
 Mar 23rd
 - Determine the benefits and drawbacks of the various device types.
 -	Time/infrastructure permitting: create and integrate a new tool into Audacity.  
+-	[Structure](https://github.com/noahspriggs/panicbeats/blob/master/pluginstructure.md)
+-	[Image Processing](https://github.com/noahspriggs/panicbeats/blob/master/imageprocessing.md)
+-	[Signal Smoothing](https://github.com/noahspriggs/panicbeats/blob/master/Signal Smoothing.md)
 
 URL
 ---
