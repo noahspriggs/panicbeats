@@ -46,7 +46,3 @@ Mar 23rd
   -	[Structure](https://github.com/noahspriggs/panicbeats/blob/master/pluginstructure.md)
   -	[Image Processing](https://github.com/noahspriggs/panicbeats/blob/master/imageprocessing.md)
   -	[Signal Smoothing](https://github.com/noahspriggs/panicbeats/blob/master/signalsmoothing.md)
-
-URL
----
-https://github.com/noahspriggs/panicbeats 
