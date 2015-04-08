@@ -45,9 +45,9 @@ Mar 9th
 Mar 23rd
 - Determine the benefits and drawbacks of the various device types.
 -	Time/infrastructure permitting: create and integrate a new tool into Audacity.  
--	[Structure](https://github.com/noahspriggs/panicbeats/blob/master/pluginstructure.md)
--	[Image Processing](https://github.com/noahspriggs/panicbeats/blob/master/imageprocessing.md)
--	[Signal Smoothing](https://github.com/noahspriggs/panicbeats/blob/master/Signal Smoothing.md)
+  -	[Structure](https://github.com/noahspriggs/panicbeats/blob/master/pluginstructure.md)
+  -	[Image Processing](https://github.com/noahspriggs/panicbeats/blob/master/imageprocessing.md)
+  -	[Signal Smoothing](https://github.com/noahspriggs/panicbeats/blob/master/Signal Smoothing.md)
 
 URL
 ---
