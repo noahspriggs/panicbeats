@@ -11,8 +11,8 @@ Audacity, an audio manipulation tool, was initially developed by Dominic Mazzoni
 	
 Approach & Deliverables
 -----------------------
-We will produce a comprehensive list of the audio manipulation tools and their respective algorithms used in Audacity, including a discussion of the merits of the chosen algorithm and the benefits and disadvantages of possible alternatives.
-	We will also investigate the recording infrastructure of the program, including the device types supported, the API used, and the benefits and drawback of each. Time and infrastructure permitting we will add a tool to Audacity that provides a desired feature not present in the current version of Audacity.  
+We produced a comprehensive list of the audio manipulation tools and their respective algorithms used in Audacity, including a discussion of the merits of the chosen algorithm and the benefits and disadvantages of possible alternatives.
+	We also investigated the recording infrastructure of the program. We added a tool to Audacity that changes the tempo of audio based on a user's conducting.  
 Schedule
 --------
 Week Of
